@@ -21,16 +21,20 @@ class SaleOrderLine(models.Model):
   _inherit = 'sale.order.line'
 
   def write(self, vals):
+    for so in self:
+      old_product_uom_qty = so.product_uom_qty
     res = super().write(vals)
-    if 'product_uom_qty' in vals:
-      self.order_id.message_post_with_source(
-        "sale_generate_note.",
-        render_values={
-          
-        }
-      )
+    
+    for line in self:
+      if 'product_uom_qty' in vals:
+        self.order_id.message_post_with_source(
+          "sale_generate_note.sale_order_mail_template",
+          render_values={
+            'product':line.product_id.display_name, 
+            'quantity': line.product_uom_qty, 
+            'old_quantity' : old_product_uom_qty}
+        )
       
-
     return res
  
 
