@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_sale_generate_note_sale_generate_note,sale_generate_note.sale_generate_note,model_sale_generate_note_sale_generate_note,base.group_user,1,1,1,1
