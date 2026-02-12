@@ -14,6 +14,7 @@ Long description of module's purpose
     'depends': ['base', 'sale'],
     'data': [
         # 'security/ir.model.access.csv',
+        'views/res_config_settings_views.xml',
         'views/mail_templates_sale.xml'
     ],
     # only loaded in demonstration mode
