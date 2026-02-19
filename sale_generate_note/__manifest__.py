@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
 {
     'name': "Sale Generate Note",
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
-
-    'description': """
-Long description of module's purpose
-    """,
-
+    'summary': "Improve your sales documentation.",
     'author': "Faturrahman Alfarisi",
-    'website': "https://www.yourcompany.com",
+    'website': "https://faturrahmanalfarisi.vercel.app/",
     'category': 'Customizations',
     'version': '1.0',
     'depends': ['base', 'sale'],
@@ -21,5 +16,6 @@ Long description of module's purpose
     'demo': [
         'demo/demo.xml',
     ],
+    'license' : 'LGPL-3'
 }
 
