@@ -28,4 +28,4 @@ To configuration this module, you need to:
 * If you do not enable configuration for this module, automatically all internal notes sale order will be disappear.
 * Once activated, internal notes are automatically created for all confirmed sales orders.
 
-.. image:: images/Example.jpeg
+.. image:: /static/docs/Example.jpeg
